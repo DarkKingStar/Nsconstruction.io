@@ -1,0 +1,470 @@
+#texttopbar{
+  text-decoration: none;
+  color: #fff;
+}
+:root{
+  --bg-color: #5ecbf6;
+  --bg-colorr: rgba(214, 251, 251, 0.463);
+  --tx-color: rgb(72, 14, 14);
+}
+*{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+.bg-loader{
+  --bg-color: #004d85ed;
+  --bg-colorr: rgba(40, 177, 201, 0.452);
+}
+.bg-dark{
+  --bg-color: #060c39;
+  --bg-colorr: rgba(0, 0, 0, 0.436);
+  --tx-color: rgb(230, 196, 196);
+}
+
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-color: #152dde9e rgba(27, 68, 68, 0.5);
+  scrollbar-width: thin; 
+}
+body{
+  background: radial-gradient(ellipse at top, var(--bg-color), var(--bg-colorr)),
+            radial-gradient(ellipse at bottom, var(--bg-color), var(--bg-colorr));
+  color: var(--tx-color);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4{
+  font-family: 'BastamanBold', sans-serif;                                        
+  font-weight: bold;
+}
+.paragragh{
+  font-family: 'EB Garamond';
+  font-size: 20px;
+}
+#loader {
+  border: 10px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  border-left: 10px solid #ff0000;
+  border-right: 10px solid #ff0000;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#theme{
+  margin-top: 25%;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#loaderline{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#companynumber{text-align: left;}
+#companyemail{text-align: center;}
+#sociallinks{
+  text-align: right;
+}
+
+#gridimage{
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    padding: 30px;
+    /* background-color: #1e1e1f9a;
+    border: 2px solid rgba(55, 53, 53, 0.708); */
+    background: radial-gradient(ellipse at top, var(--bg-color), var(--bg-colorr));
+    border: 1px solid var(--bg-color);
+    box-shadow: 6px 6px #2244542c;
+    background-size: 300% 300%;
+    animation: GlowingAnimation 10s ease infinite;
+    border-radius: 30px;
+  }
+  
+
+  #gridimage p{
+    text-align: center;
+  }
+#imggrid{
+  width: 100%;
+  margin: 2%;
+  border-radius: 30px;
+}
+  .carousel-caption {
+   position: absolute;
+   top:40px;
+}
+#footer {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+#message,#email,#name,#phone,#subject{
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.14),rgba(0, 0, 0, 0.222),rgba(0, 0, 0, 0.458));
+}
+.conusform{
+  color: #000000;
+}
+.map-container{
+overflow:hidden;
+padding-top:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:20%;
+top:25%;
+height:80%;
+width:80%;
+position:absolute;
+}
+.dropdown-item.nav-link {
+  background: transparent;
+}
+
+#offadd{
+  padding-top: 50%;
+  text-align: center;
+}
+.mb-4{
+  margin-top: 200px;
+}
+
+#textimgid{
+  border-radius: 12px;
+}
+.main-btn{ background:#ee6307; border-color:#7c3f02; color:rgb(255, 255, 255);}
+.main-btn:hover{ background:#4652dc;color:#fff;}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+
+
+#slide1 {
+  
+  animation:fade 20s infinite;
+-webkit-animation:fade 10s infinite;
+
+} 
+#slide2 {
+
+  animation:fade 20s infinite;
+-webkit-animation:fade 10s infinite;
+}
+#slide3 {
+ 
+  animation:fade 20s infinite;
+-webkit-animation:fade 10s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:0}
+  20% { opacity: 1}
+  40% { opacity: 1}
+  60% { opacity: 1}
+  80% { opacity: 1}
+  100% { opacity: 0}
+}
+
+
+
+
+
+
+
+
+
+.overlay-form {
+  position:fixed;
+  top:50vh;
+  left:0px;
+  width:100vw;
+  height:0vh;
+  background:rgba(0,0,0,0.8);
+  z-index:-1;
+  opacity:0;
+  padding:80px 100px;
+  overflow:hidden;
+  box-sizing:border-box;
+  transition: top 500ms ease-in-out,
+              opacity 500ms ease-in-out,
+              height 0ms ease-in-out 500ms;  
+}
+.overlay-form .close-btn {
+  position:absolute;
+  top:60px;
+  right:40px;
+  color:#fff;
+  font-size:40px;
+  font-weight:600;
+  cursor:pointer;
+}
+.overlay-form h1 {
+  font-size:32px;
+  color:#fff;
+}
+.overlay-form p {
+  font-size:16px;
+  color:#eee;
+  margin:-15px 0px 30px;
+}
+.overlay-form .form-element {
+  margin:20px 0px;
+}
+.overlay-form label {
+  display:block;
+  font-size:17px;
+  color:#eee;
+  margin-bottom:5px;
+}
+.overlay-form input,.overlay-form textarea {
+  width:100%;
+  padding:6px;
+  font-size:17px;
+  border:2px solid #eee;
+  background:transparent;
+  outline:none;
+  border-radius:10px;
+}
+.overlay-form input:focus,.overlay-form textarea:focus{
+  width:100%;
+  padding:6px;
+  font-size:17px;
+  color:#ffffff;
+  outline: none;
+  border:2px solid rgba(83, 126, 225, 0.551);
+  background:rgba(83, 126, 225, 0.14);
+  outline:none;
+  border-radius:10px;
+}
+.fixedbutton button {
+  font-size:16px;
+  padding: 0px 10px 10px 10px;
+  /* background: rgb(238, 230, 6); */
+  border:none;
+  outline:none;
+  color: black;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: linear-gradient(270deg, #ffe50190, #1443df);
+  background-size: 400% 400%;
+  animation: GlowingAnimation 5s ease infinite;
+  transition: 0.6s;
+
+}
+.fixedbutton button:hover{
+  background-image: linear-gradient(to left, #1443df, #ffe50190);
+  cursor: pointer;
+}
+.fixedbutton {
+  position:fixed;
+  top:90%;
+  left:90%;
+  transform:translate(-50%,-50%);
+  z-index: 1;
+}
+
+@keyframes GlowingAnimation {
+  0%{
+    background-position: 1% 0%;
+  }
+  50%{
+    background-position: 99% 100%;
+  }
+  100%{
+    background-position: 1% 0%;
+  }
+}
+
+body.activeForm .overlay-form {
+  z-index:2;
+  opacity:1;
+  top:0px;
+  height:100vh;
+  transition: top 500ms ease-in-out,
+              opacity 500ms ease-in-out,
+              height 0ms ease-in-out 0ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 850px) {
+    .fixedbutton {
+      left:85%;
+    }
+    #email,#name{
+      margin-top: 5%;
+    }
+
+    #gridimage{
+    padding: 5%; 
+    width: 60%;
+  }
+  #textimgid{
+    width:100%;
+  }
+  .mb-4{
+    margin-top: 0;
+  }
+  .dropdown-item.nav-link {
+    text-align: center;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  #caraimg{
+    height: 300px;
+  }
+   .carousel-caption {
+   top:60%;
+  } 
+  .carousel-caption h3{
+    font-size: 18px;
+  }
+  .carousel-caption p{
+    font-size: 12px;
+   }
+   
+   
+
+
+  .map-container{
+    overflow:hidden;
+    /*padding-top:56.25%;*/
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:50%;
+    transform: translate(-50%,0);
+    height:60%;
+    width:80%;
+    position:absolute;
+  }
+  #companynumber{font-size:12px;text-align: center;width: 33%;padding-left: 4.5%;}
+  #companyemail{font-size:12px;text-align: center;width: 33%;padding: 0%}
+  #sociallinks{font-size:12px;text-align: center;width: 30%;padding: 0%;}
+  #topbar{padding: 0%;}
+  .nav-item{
+    text-align: center;
+  }
+  body{
+    background: radial-gradient(ellipse at top, var(--bg-color), var(--bg-colorr)),
+            radial-gradient(ellipse at bottom, var(--bg-color), var(--bg-colorr));
+  }
+  #theme{
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 20px;
+    
+  }
+}
+@media only screen and (max-width: 470px){
+  #companynumber{font-size:12px;text-align: center;width: 50%;padding-left: 4.5%;}
+  #companyemail{font-size:12px;text-align: center;width: 50%;padding: 0%}
+  #sociallinks{display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
